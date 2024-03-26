@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site teste</title>
+
+    <!-- estilos da pagina-->
+    <link rel="stylesheet" href="estilos.css">
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="Imagem2-removebg-preview.png" type="image/png">
+
+</head>
+
+<body>
+    <!-- cabeçalho -->
+    <header class="container-cabecalho">
+        <a href="index.html">
+            <img src="Imagem2-removebg-preview.png" alt="logo_empresa" title="residencial">
+        </a>
+
+        <!-- Area de Login -->
+        <div class="login-container">
+            <h2>Faça seu acesso</h2>
+            <form action="processar_login.php" method="post">
+                <label for="username"></label>
+                <input type="text" id="username" name="username" placeholder="Digite o seu CPF" required>
+        
+                <label for="password"></label>
+                <input type="password" id="password" name="password" placeholder="Digite sua senha" required>
+        
+                <button type="submit">Entrar</button>
+            </form>
+        </div>
+
+    </header>
+
+    <!-- navegação -->
+    <nav class="container-navegacao">
+        <a href="imoveis.html">Veja os imoveis <br> disponíveis</a>
+    </nav>
+    <!-- botao wpp -->
+    <div class="wpp">
+        <a href="https://api.whatsapp.com/send?phone=555511999491243" class="botao-wpp">(11)9.9949-1243
+            <img src="whatsapp-logo-24.png" alt="">
+        </a>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,155 @@
+body::before {
+    content: "";
+    border-right: 1px solid blue;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 13%;
+    transform: translateX(-50%);
+}
+
+.navegacao-container {
+    margin-left: 20px;
+    
+    z-index: 2;
+}
+
+.botao-wpp {
+    text-decoration: none;
+    font-size: 1.5em;
+    display: block;
+    justify-content: center;
+    background-color: #25D366;
+    color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 20px;
+    width: 150px;
+    margin-left: 1px;
+    margin-top: 35vh;
+    text-align: right;
+}
+
+.botao-wpp img {
+    position: absolute
+}
+
+/* info do usuario */
+.user-info-container {
+    position: absolute;
+    top: 10px;
+    right: 60px;
+}
+
+/* Estilo para o cabeçalho 'Cadastro de CPF' */
+.cpf-container {
+    margin-bottom: -100vh; /* Adicione uma margem inferior para levantar o formulário */
+}
+
+/* Estilo para o cabeçalho 'Cadastro de CPF' */
+.cpf-container h3 {
+    color: blue;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: -90vh;
+}
+
+
+/* Estilo para o formulário */
+form {
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: gray;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="tel"],
+form input[type="password"] {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form button[type="submit"] {
+    width: calc(100% - 22px);
+    padding: 10px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+form button[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+.pesquisa-container {
+    margin-top: -98vh;
+}
+
+.resultado-pesquisa {
+    margin-left: 90vh;
+}
+/* Formulario cadastro */
+.center {
+   margin-right: 600px;
+
+}
+
+.center h3 {
+    text-align: center;
+}
+
+/* Estilo para o modal */
+.modal {
+    display: none; /* Ocultar modal por padrão */
+    position: fixed; /* Posição fixa */
+    z-index: 999; /* Z-index alto para garantir que o modal fique em cima de outros elementos */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; /* Adicionar scroll se necessário */
+    background-color: rgba(0,0,0,0.4); /* Fundo escuro semi-transparente */
+}
+
+/* Estilo para o conteúdo do modal */
+.modal-content {
+    background-color: #fefefe; /* Cor de fundo do modal */
+    margin: 15% auto; /* Centralizar o modal verticalmente e deixar uma margem em relação ao topo */
+    padding: 20px;
+    border: 1px solid #888; /* Borda do modal */
+    border-radius: 10px; /* Borda arredondada */
+    width: 80%; /* Largura do modal */
+    max-width: 600px; /* Largura máxima do modal */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* Sombra do modal */
+    position: relative; /* Posição relativa para garantir que o botão de fechar funcione corretamente */
+}
+
+/* Estilo para o botão de fechar do modal */
+.close {
+    color: #aaa; /* Cor do ícone de fechar */
+    float: right; /* Alinhar o botão de fechar à direita */
+    font-size: 28px; /* Tamanho da fonte do ícone de fechar */
+    font-weight: bold; /* Fonte em negrito */
+}
+
+.close:hover,
+.close:focus {
+    color: black; /* Cor do ícone de fechar ao passar o mouse ou focar */
+    text-decoration: none; /* Remover sublinhado ao passar o mouse */
+    cursor: pointer; /* Alterar o cursor ao passar o mouse */
+}
